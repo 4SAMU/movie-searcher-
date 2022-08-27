@@ -49,7 +49,7 @@ const App = () => {
         <div className="empty">
           <h2>No movies found  <br /></h2>
 
-          <h5>please enter a valid movie name</h5>
+          <span>please enter a valid movie name</span>
         </div>
       )}
     </div>
