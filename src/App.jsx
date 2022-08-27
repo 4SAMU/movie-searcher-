@@ -47,9 +47,7 @@ const App = () => {
         </div>
       ) : (
         <div className="empty">
-          <h2>No movies found  <br /></h2>
-
-          <span>please enter a valid movie name</span>
+          <h2>No movies found</h2><span>please enter a valid movie name</span>
         </div>
       )}
     </div>
