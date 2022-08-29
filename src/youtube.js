@@ -15,7 +15,7 @@ const youtube = () => {
 
         if (data.videos && data.videos.results) {
             const trailer = data.videos.results.find(vid => vid.name === "Official Trailer")
-            console.log(trailer ? trailer : data.videos.results[0])
+            console.log(trailer)
         }
 
         console.log(data)
