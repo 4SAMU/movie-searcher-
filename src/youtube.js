@@ -4,8 +4,9 @@ const API_KEY="b6003d8a";
 
 const youtube = () => {
    
-    const fetchMovie = async (Title) => {
-        const {data} = await fetch(`${API_URL}movie/${Title}`, {
+    const fetchMovie = async (imdbID) => {
+        const {data} = await fetch(`${API_URL}&s=${imdbID} `,
+        {
             params: {
                 api_key: API_KEY,
                 append_to_response: "videos"
