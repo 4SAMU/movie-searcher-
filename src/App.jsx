@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import LoadingBar from 'react-top-loading-bar';
+// import LoadingBar from 'react-top-loading-bar';
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
@@ -10,15 +10,7 @@ const API_URL = "https://www.omdbapi.com?apikey=b6003d8a";
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
-  const [progress, setProgress]=useState(0);
-
-  const progressBar=()=>{
-    setProgress(progress+100)
-    if(progress===100)
-    setProgress(0);
-  }
-
- 
+  
   useEffect(() => {
     searchMovies("");
   }, []);
@@ -32,15 +24,6 @@ const App = () => {
 
   return (
     <div className="app">
-
-  <div>
-    <LoadingBar
-    color='#f11946'
-    progress={progress}
-    onLoaderFinished={() => setProgress(0)}
-  />
-    
-    </div>
       <h1>SAMUTECH studio</h1>
 
       <div className="search">
@@ -53,7 +36,7 @@ const App = () => {
         <img
           src={SearchIcon}
           alt="search"
-          onClick={() => progressBar()&&searchMovies(searchTerm)}      
+          onClick={() =>searchMovies(searchTerm)}      
 
         />
       </div>
