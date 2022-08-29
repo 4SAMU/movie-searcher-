@@ -48,7 +48,7 @@ const App = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search for movies"
-          onKeyPress={(e) => e.key === 'Enter'&&progressBar()&& searchMovies(searchTerm)}
+          onKeyPress={(e) => e.key === 'Enter'&& searchMovies(searchTerm)}
         />
         <img
           src={SearchIcon}
