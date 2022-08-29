@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import LoadingBar from 'react-top-loading-bar';
+
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
